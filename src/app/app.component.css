@@ -1,0 +1,12 @@
+
+.background {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #c82e45;
+
+    /* centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

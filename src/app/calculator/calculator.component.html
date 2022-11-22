@@ -1,0 +1,35 @@
+<div class="calculator-container">
+    <div class="bmi-value-container">
+        <h1>{{ bmi }} kg/m<sup>2</sup></h1>
+        <p>{{ bmiText }}</p>
+    </div>
+
+    <p class="message">
+        CALCULATE YOUR BMI
+    </p>
+
+    <div class="sliders-outer-container">
+        <div class="slider-container">
+            <input type="range" min="1" max="110" step="0.5" class="slider" [(ngModel)]="height" (change)="updateBMI()">
+            <span class="first-val-unit">
+                <span class="val">{{ height }}</span> <span class="unit">in</span>
+            </span>
+        </div>
+    
+        <div class="slider-container">
+            <input type="range" min="1" max="300" step="1" class="slider" [(ngModel)]="weight" (change)="updateBMI()">
+            <span>
+                <span class="val">{{ weight }}</span><span class="unit">lbs</span>
+            </span>
+        </div>
+    </div>
+
+
+    <!-- <div class="btn-container">
+        <button>Calculate</button>
+    </div> -->
+
+    <div class="bmi-range-container">
+        <input disabled type="range" min="0" max="100" step="0.1" class="bmi-range" [value]="bmiPercentDisplayVal">
+    </div>
+</div>

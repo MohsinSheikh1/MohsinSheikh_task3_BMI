@@ -1,0 +1,135 @@
+/* Styling the container */
+.calculator-container {
+    width: 400px;
+    height: 400px;
+
+    background-color: #212434;
+    border-radius: 10px 10px 8px 8px;
+}
+
+.calculator-container > * {
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling the BMI Value Container */
+.bmi-value-container {
+    padding: 20px 0px;
+    background-color: #3f9a40;
+    color: #b0c9b4;
+    border-radius: 7px 7px 0px 0px;
+
+    box-shadow: 1px -1px 8px #5e5050, -1px 0px 8px black;
+}
+
+.message {
+    font-size: 20px;
+    font-weight: bold;
+    
+    width: 300px !important;
+    
+    /* color: #3b3c57; */
+    color: rgba(65,67,88,255);
+
+    border-bottom: 2px solid #c02e37;
+    border-radius: 2px;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* Styling the slider */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    background-color: #0a102d;
+    outline: none;
+    border-radius: 2px;
+
+    width: 75%;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: #c02e37;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.sliders-outer-container {
+    margin-top: 30px;
+}
+
+.slider-container {
+    width: 350px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-container:nth-last-of-type(1) {
+    margin-top: 20px;
+}
+
+.val {
+    font-size: 32px;
+    font-weight: bold;
+    color: #c02e37;
+}
+
+.first-val-unit {
+    position: relative;
+    right: 20px;
+}
+
+.unit {
+    font-weight: bold;
+    position: relative;
+    left: 3px;
+    color: rgba(65,67,88,255);
+}
+
+.bmi-range-container {
+    margin-top: 20px;
+}
+
+.bmi-range {
+    width: 80%;
+}
+
+.bmi-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background-color: #0a102d;
+    outline: none;
+    border-radius: 2px;
+
+    width: 75%;
+
+    background: linear-gradient(90deg, yellow 0%, yellow 33.3%, green 33.3%, green 66.6%, red 66.6%, red 100%);
+}
+
+.bmi-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+    height: 0px;
+    position: relative;
+    top: 5px;
+
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #c02e37;
+    border-top: 15px solid transparent;
+
+}
